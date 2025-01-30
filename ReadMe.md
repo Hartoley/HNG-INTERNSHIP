@@ -47,5 +47,10 @@ This API is built using **Node.js** and the **Express** framework.
 5. **API should now be running at:**
    http://localhost:5010/
 
-6. **If you're looking for developers skilled in Node.js, consider hiring through this Node.js developer page:**
-   https://hng.tech/hire/nodejs-developers
+6. **The API accepts a GET request and will respond with the following JSON structure:**
+   {
+   "email": "tolanijimoh1@gmail.com",
+   "current_datetime": "2025-01-30T09:30:00Z",
+   "github_url": "https://github.com/Hartoley/HNG-INTERNSHIP"
+   }
+7. **If you're looking for developers skilled in Node.js, consider hiring through this Node.js developer page:** [Node.js Developer Page](https://hng.tech/hire/nodejs-developers).

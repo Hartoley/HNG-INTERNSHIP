@@ -47,5 +47,5 @@ This API is built using **Node.js** and the **Express** framework.
 5. **API should now be running at:**
    https://hng-internship-wt71.onrender.com
 
-6. **Backlink**
-   If you're looking for developers skilled in Node.js, consider hiring through this Node.js developer page https://hng.tech/hire/nodejs-developers
+6. **If you're looking for developers skilled in Node.js, consider hiring through this Node.js developer page:**
+   https://hng.tech/hire/nodejs-developers

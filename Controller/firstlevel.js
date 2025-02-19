@@ -1,4 +1,5 @@
 const axios = require("axios");
+const Book = require("../Model/firstmodel");
 
 const returnMyDetails = async (req, res) => {
   try {
@@ -83,4 +84,18 @@ const classifyNumber = async (req, res) => {
   }
 };
 
-module.exports = { returnMyDetails, classifyNumber };
+const getBookById = async (req, res) => {
+  const { bookId } = req.params;
+  try {
+    const book = await Book.findById(bookId);
+    if (!book) {
+      return res.status(404).json({ detail: "Book not found" });
+    }
+    res.json(book);
+  } catch (error) {
+    console.error("Error retrieving book:", error);
+    res.status(500).json({ detail: "Server error" });
+  }
+};
+
+module.exports = { returnMyDetails, classifyNumber, getBookById };
